@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="http://google.comttps://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="http://google.comttps://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="http://google.comttps://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>On Click Menu</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .menu-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .menu {
+        font-size: 25px;
+        padding: 30px;
+        width: 50%;
+        height: 220px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        transition: all 0.3s;
+        font-family: inherit;
+      }
+
+      .one {
+        display: grid;
+        place-items: start;
+        background-color: #c9da75;
+      }
+
+      .one:hover {
+        background-color: #c9da75d4;
+      }
+
+      .two {
+        display: grid;
+        place-items: stretch end;
+        background-color: #e6764e;
+      }
+
+      .two:hover {
+        background-color: #e6764ed9;
+      }
+
+      .three {
+        display: grid;
+        place-items: end stretch;
+        background-color: #0878a8;
+      }
+
+      .three:hover {
+        background-color: #0878a8d9;
+      }
+
+      .four {
+        display: grid;
+        place-items: end end;
+        background-color: #80dadd;
+      }
+
+      .four:hover {
+        background-color: #80daddd1;
+      }
+
+      .five {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        max-width: 300px;
+        height: 300px;
+        transform: translate(-50%, -50%);
+        background-color: #2eb771;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+      }
+
+      .five:hover {
+        background-color: #2eb771d9;
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        .menu {
+          padding: 10px;
+        }
+
+        .five {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="menu-wrapper">
+        <a href="http://google.com" class="menu one">Demokratie</a>
+
+        <a href="http://google.com" class="menu two">Europa</a>
+
+        <a href="http://google.com" class="menu three">Gemeinwohl</a>
+
+        <a href="http://google.com" class="menu four">Downloads</a>
+
+        <a href="http://google.com" class="menu five">Demokratie</a>
+      </div>
+    </div>
+  </body>
+</html>
